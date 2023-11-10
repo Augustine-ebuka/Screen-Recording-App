@@ -1,0 +1,645 @@
+/* created some variable in order to resuse it at different place */
+:root{
+    --layout:100px;
+    --small:30px;
+    --tablet:50px;
+}
+/* this specify default style for the document */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+    .nav-area{
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding-left: var(--layout);
+    padding-right: var(--layout);
+    background-color: rgba(255, 69, 0, 0.2);
+    }
+    .logo {
+    line-height: 70px;
+    font-size: larger;
+
+    }
+    #search{
+        height: 40px;
+        border-radius: 10px;
+        padding: 3px;
+        border: 1px solid #ccc;
+        outline: none;
+        width: 20%;
+        margin-top: 20px;
+    }
+    #active{
+        color:green;
+    }
+    .nav-area ul{
+    float: right;
+    margin-right: 20px;
+    }
+    .nav-area ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+    }
+    .nav-area ul li a {
+    color: orangered;
+    font-size: 14px;
+    padding: 22px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+    .nav-area ul li a:hover{
+    color:green;
+    transition: .5s;
+    }
+    .btn-area{
+  
+    color: white;
+    float: right;
+    line-height: 62px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    }
+    #box{
+    display: none;
+    }
+   
+   
+    
+/* hero section styling start here */
+.heroSection{
+    height: 100vh;
+    padding-bottom: 50px;
+}
+.heroContent{
+    margin-left: var(--layout);
+    margin-right: var(--layout);
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 30px;
+}
+.text{
+    flex: 1;
+    
+}
+.more{
+    background-color: rgba(255, 69, 0, 0.4);
+    border-radius: 20px;
+    padding: 10px;
+    color: orangered;
+    font-weight: 600;
+}
+.hour{
+    color: orangered;
+    font-weight: 600;
+}
+.fill-btn{
+    height: 60px;
+    padding: 5px;
+    color: white;
+    background-color: orangered;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.outline-btn{
+    height: 60px;
+    padding: 5px;
+    color: orangered;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    width: 150px;
+    cursor: pointer;
+    border: 1px solid orangered;
+    margin-top: 30px;
+}
+
+.cta button:hover{
+    background-color: rgb(212, 64, 10);
+    color:white;
+}
+.text h1{
+    font-size: 52px;
+    text-wrap: wrap;
+    width: 400px;
+    margin-top: 30px;
+}
+.text p{
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.img{
+    flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.img img{
+    width: 100%;
+}
+#animate{
+    animation: animatObj 3s ease-in-out forwards;
+}
+
+/* aniamtion effect */
+@keyframes animatObj{
+    0%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+/* Services styling section start here */
+.heroSection{
+    height: auto;
+}
+.serviceSection{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgba(248, 197, 178, 0.2);
+    margin-top: 0px;
+}
+.serviceSection{
+    margin-right: var(--layout);
+    margin-left: var(--layout);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.serviceSection h1{
+    font-size: 58px;
+    word-break: break-all;
+    margin-bottom: 30px;
+    padding: 0;
+    margin-top: 30px;
+
+}
+.serviceSection p{
+    color: orangered;
+    margin-bottom: 10px;
+}
+.serviceSection .card{
+    display: flex;
+    padding: 0px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.card img{
+    width: 25%;
+}
+
+/* General layout styling for similar section */
+.layoutSection{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.layoutContent{
+    margin-right: var(--layout);
+    margin-left: var(--layout);
+    padding-top: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 30px;
+}
+.layoutContent h1{
+    font-size: 48px;
+    margin: 0px;
+    line-height: normal;
+}
+.layoutContent p:first-child{
+    color: green;
+    margin-bottom:7px ;
+}
+.layoutImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.layoutImage img{
+    width: 50%;
+}
+.layoutText{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    flex: 1;
+    /* inline-size: 600px; */
+}
+
+
+
+/* footer styling starts here*/
+  .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: orangered;
+  }
+  .footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .footer a{
+    text-decoration: none;
+    color:white;
+  }
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col ul li {
+    color: white;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  .footer a:hover{
+
+      color: black;
+  }
+  .footer .col ul li:hover {
+    color: black;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  .clearfix {
+    clear: both;
+  }
+  
+ /* responsivness for different screens start here */
+ @media (max-width: 860px){
+    .heroContent img{
+        width: 100%;
+      }
+        
+    #search{
+        display: none;
+    }
+    .nav-area{
+        position: fixed;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 20px;
+        background: orangered;
+    }
+    .btn-area{
+    display: block;
+
+    }
+    .nav-area ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: orangered;
+    top: 62px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 20;
+    }
+    .nav-area ul li {
+    display: block;
+    margin: 0;
+    line-height: 30px;
+    padding: 25px 0;
+    }
+    .nav-area ul li a{
+    font-size: 20px;
+    color: white;
+    }
+    .nav-area ul li a:hover{
+    color: white;
+    }
+    .nav-area ul li:hover{
+        background: #000;
+    }
+    .nav-area ul li a:hover{
+        background: none;
+    }
+    #box:checked ~ ul{
+    left: 0;
+    }
+}
+  
+/* mobile phone responsivness */
+@media screen and (max-width: 768px) {
+    .navbarItems{
+        display: none;
+    }
+    .heroContent{
+        margin-left: var(--small);
+        /* background-color: oldlace; */
+        margin-right: var(--small);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+        padding: 10px;
+        padding-top: 10px;
+    }
+    .hour{
+        color: orangered;
+        font-weight: 600;
+    }
+    .cta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+    }
+    .cta button{
+        height: 40px;
+        padding: 3px;
+        color: white;
+        background-color: orangered;
+        text-align: center;
+        border: none;
+        border-radius: 3px;
+        width: 100px;
+        cursor: pointer;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+    }
+    .text h1{
+        font-size: 48px;
+        text-wrap: wrap;
+        width: 300px;
+        text-align: center;
+    }
+    .text p{
+        width: 300px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .img{
+        flex: 1;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .img img{
+        width: 100%;
+        animation-name: animatObj;
+        animation-duration: 4s;
+    }
+
+    /* services  */
+    .serviceSection{
+        margin-left: var(--small);
+        margin-right: var(--small);
+    }
+
+    .serviceSection .card{
+        display: flex;
+        padding: 0px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+        flex-direction: column;
+        width:auto;
+    
+    }
+    .serviceSection span{
+        display: none;
+    }
+    .card img{
+        width: 100%;
+    }
+    .serviceSection h1{
+        font-size: 30px;
+        word-break: break-all;
+    
+    }
+    .serviceSection p{
+        margin-top: none;
+        color: orangered;
+    }
+    
+
+    /* layout 3 */
+    .layoutSection{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.layoutContent{
+    margin-left: var(--small);
+    margin-right: var(--small);
+    padding-top: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 30px;
+    flex-direction: column;
+}
+.layoutContent h1{
+    font-size: 32px;
+    margin: 0px;
+    text-align: center;
+}
+.layoutContent p:first-child{
+    color: green;
+    margin-bottom:7px ;
+    text-align: center;
+}
+.layoutImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.layoutImage img{
+    width: 100%;
+}
+.layoutText{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.layoutText h1{
+    word-wrap: break-word;
+    text-align: center;
+}
+
+}
+
+/* other screens responsiveness */
+@media only screen and (max-width: 1139px) {
+    .img img{
+        width: 100%;
+    }
+    .serviceSection h1{
+        font-size: 30px;
+        word-break: break-all;
+        margin-bottom: 30px;
+        padding: 0;
+    
+    }
+    .card img{
+        width: 50%;
+    }
+    
+    .serviceSection h1{
+        font-size: 40px;
+        word-break: break-all;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .contain .social {
+      width: auto;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    .layoutContent{
+        margin-left: var(--tablet);
+        margin-right: var(--tablet);
+    }
+    .serviceSection h1{
+        font-size: 38px;
+        word-break: break-all;
+        margin-bottom: 30px;
+        padding: 0;
+    
+    }
+    .img img{
+        width: 100%;
+    }
+    .layoutContent h1{
+        font-size: 42px;
+        margin: 0px;
+        line-height: normal;
+    }
+    .serviceSection h1{
+        font-size: 38px;
+        word-break: break-all;
+        margin-bottom: 30px;
+        padding: 0;
+    
+    }
+    .card img{
+       max-width: 40%;
+    }
+    
+    .footer .col {
+      width: auto;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .serviceSection h1{
+        font-size: 32px;
+        word-break: break-all;
+        margin-bottom: 30px;
+        padding: 0;
+    
+    }
+    .serviceSection h1{
+        font-size: 32px;
+        word-break: break-all;
+        margin-bottom: 30px;
+        padding: 0;
+    
+    }
+      .footer .col {
+        width:auto;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+      .img img{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 340px) {
+    .serviceSection h1{
+        font-size: 30px;
+        word-break: break-all;
+        margin-bottom: 30px;
+        padding: 0;
+    
+    }
+    .footer .col {
+      width: 100%;
+    }
+}
+
+ 
